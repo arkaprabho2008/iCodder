@@ -1,0 +1,36 @@
+extends base.pug
+block scripts 
+    script 
+        include ../static/index.js
+
+block style 
+    style 
+        include ../static/style.css
+        link(rel="stylesheet", media="screen and (max-width: 650px)", href="../static/phone.css")
+
+block content 
+        section.introSection 
+            div Welcome to iCodder programming academy
+            div.sleep  Inquire Innovate Inspire
+
+        section.missionSection 
+            h1 Our Mission
+            div.container
+                div#card1.card 
+                    h2 Learn Programming
+                    p Learn various kinds of programming languages , like java , python , JavaScript etc
+                div#card2.card 
+                    h2 Website Designing
+                    p Learn web development , and design awesome websites using html , css and javaScript.
+                div#card3.card 
+                    h2  Codding Blog 
+                    p Get various news on technology , programming , trends etc.
+           
+            
+        section.sponsorsSection
+            h1 Our Tutorials 
+            div.sponsors
+                img(src="../static/img/logo1.png", alt="logo1" class="logo1")
+                img(src="../static/img/logo2.png", alt="logo2" class="logo2")
+                img(src="../static/img/logo3.png", alt="logo3" class="logo3")
+                img(src="../static/img/logo4.png", alt="logo4" class="logo4")
